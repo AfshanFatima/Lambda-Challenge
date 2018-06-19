@@ -7,8 +7,9 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
-
-}
+  let string = 'helloworld!'
+return '${string}';
+};
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -24,8 +25,14 @@ function helloWorld() {
 */
 
 function lambdaSchool() {
-
-}
+  if (num % 3 === 0 && num % 5 === 0) {
+    return 'Lambda School';
+   } else if (num % 5 === 0) {
+     return 'School';
+   } else if (num % 3 === 0) {
+     return 'Lambda';
+   } return num;
+};
 
 /*
 3. Write a function called longestString that has a single parameter called strs.
@@ -39,8 +46,14 @@ function lambdaSchool() {
 */
 
 function longestString() {
-
+  let longestString = 0;
+for (let i = 0; i < strs.length; i++) {
+  if (strs(i) > longestString) {
+    longestString = strs(i);
+  }
 }
+return longestString;
+};
 
 /*
 4. Write a function called computeUserAverageAge that has a single parameter called users
@@ -64,8 +77,31 @@ function longestString() {
 */
 
 function computeUserAverageAge() {
+  let totalUsersAge = 0;
+  let numberOfAge = 0;
+  for(let i = 0; i < averageAge.length; i++ ){
+  totalUsersAge += averageAge[i];
+  numberOfAge++;
+  }
+return Math.round(computeUserAverageAge[totalUsersAge/numberOfAge[i]]);
 
-}
+};
+/*
+const users = {
+ name: 'Brendan Eich',
+        age: 56,
+   };
+  push.users('Linus Torvalds', 48);
+  push.users('Margaret Hamilton', 81);
+  let sum = 0;
+  for (let i = 0; i < users.age.length; i++) {
+    sum += sum[i];
+  }
+  let ave = sum / users.age.length;
+  return ave;
+  };
+
+*/
 
 module.exports = {
  helloWorld,
